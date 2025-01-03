@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+</head>
+<body>
+    <h1 style="background-color: tomato;">Please enter the mail</h1>
+    <div class="rahul">
+        <input type="text" id="mail" style="text-align: center;">
+        <label for="mail">Please enter the mail</label>
+        <button onclick="validate()">Click Me!</button>
+    </div>
+
+    <script>
+        function validate(){
+            var getmail = document.getElementById("mail").value;
+            var check = /[a-z]{4,}[0-9]{1,}\@[a-z]{3,}\.[a-z]{2,3}/;
+
+            if(getmail.match(check)){
+                window.alert("right");
+            }
+            else{
+                document.write("wrong");
+            }
+        }
+    </script>
+</body>
+</html>

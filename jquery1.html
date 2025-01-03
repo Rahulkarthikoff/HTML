@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin: 20px;
+        }
+        #text{
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 300px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple jQuery Example</h1>
+    <button id="toggle-button">Toggle Text Visibility</button>
+    <div id="text">
+        <p>
+            This is a simple paragraph. click the button to hide/show the text.
+        </p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#toggle-button').click(function(){
+                $('#text').toggle();
+            })
+        })
+    </script>
+</body>
+</html>

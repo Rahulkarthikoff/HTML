@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Image</title>
+    <style>
+        #mi{
+            position: absolute;
+            transition: 20;
+        }
+    </style>
+</head>
+<body>
+    <img src="Photo of Rahul.jpg" id="mi" width="100" height="100">
+    <script>
+        function load(){
+            var i = document.getElementById('mi');
+            var curpos = parseInt(i.style.left) || 0;
+            var newpos = curpos+2;
+            i.style.left = newpos + "px";
+            setTimeout(load,50);
+        }
+        load();
+    </script>
+</body>
+</html>

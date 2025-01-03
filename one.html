@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- <h1>hello</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6> -->
+
+    <table border="5">
+        
+        <!-- <tr>
+        <th>Firstname </th>
+        <th>Lastname </th>
+        <th>Age </th>
+            
+        </tr>
+        <tr>
+            <td>Priya </td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun </td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam </td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr> -->
+
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th colspan="2" rowspan="2">Topic</th> 
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th> 
+            
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8.00 a.m. </td>
+            <td rowspan="2">5.00 p.m.</td>
+            <td colspan="2"> Introduction to XML</td>
+        </tr>
+        <tr>
+            <td colspan="2"> Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8.00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td colspan="2" rowspan="1.5">XPath</td>
+        </tr>
+        <tr>
+            <td>11.00 a.m.</td>
+            <td>2.00 p.m.</td>
+            <td colspan="2" rowspan="1.5">XSL Transformation</td>
+        </tr>
+        <tr>
+            <td>2.00 p.m.</td>
+            <td>5.00 p.m.</td>
+            
+        </tr>
+        <tr>
+            <td>Wednesdy</td>
+            <td>8.00 a.m.</td>
+            <td>12.00 p.m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+    <div class="divone" >
+        <h1>Hiii</h1>
+        <h1>Hiii</h1>
+        <h1>Hiii</h1>
+        <h1>Hiii</h1>
+        <h1>Hiii</h1>
+    </div>
+    <button onclick="changeColor()">Change Color</button>
+    <div class="divtwo"style="color: green;">
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+    </div>
+    <script>
+        function changeColor(){
+            ele = document.getElementsByClassName('divone').style.color = 'blue';
+            console.log(ele)
+            
+        }
+    </script>
+</body>
+</html>

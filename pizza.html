@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ordering</title>
+</head>
+<body>
+    <h2 style="background-color: red;">Chicken Pizza</h2>
+    <h5 style="background-color: yellow;">200Rupees</h5>
+    <input type="text" id="Chicken">
+
+    <h2 style="background-color: red;">Veg Pizza</h2>
+    <h5 style="background-color: yellow;">100Rupees</h5>
+    <input type="text" id="veg">
+
+    <h2 style="background-color: red;">Egg Pizza</h2>
+    <h5 style="background-color: yellow">150Rupees</h5>
+    <input type="text" id="egg">
+    <br>
+    <br>
+    <input type="button" onclick="pizza()">Place Order</input>
+
+    <script>
+        function pizza(){
+            let a =0, b=0,c=0, t , sum=0;
+            a = document.getElementById("Chicken").value;
+            b = document.getElementById("veg").value;
+            c = document.getElementById("egg").value;
+
+            document.write(a);
+            sum = a*200 + b*100 + c*150;
+            document.write(sum);
+            t = window.confirm("The Total Sum is"+sum);
+            if(t==1){
+                window.alert("Your Ordered has been Placed successfully")
+            }
+            if(t==0){
+
+                window.alert("Your Ordered Cancelled")
+            }
+
+        }
+    </script>
+</body>
+</html>

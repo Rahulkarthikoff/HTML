@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <div id="innerdiv">
+        <table border="1" id="innertable" >
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+        <!-- var tr = document.createElement("tr");
+var td = document.createElement("td");
+var span = document.createElement("span");
+var text = document.createTextNode("something here..");
+span.appendChild(text);
+td.appendChild(span);
+tr.appendChild(td);
+
+tbody.appendChild(tr); -->
+    </div>
+    <script>
+        const a = parseInt(window.prompt("Enter the No Of Rows"));
+        const b = parseInt(window.prompt("Enter the No Of Columns"));
+        
+        const tbody = document.getElementById("tbody");
+        if(tbody){
+        
+        
+        
+        
+        
+        for(let i=1;i<=a;i++)
+        {
+            const tr = document.createElement("tr");
+            for(let j=1;j<=b;j++)
+            {
+                const td = document.createElement("td");
+                const span = document.createElement("span");
+                const text = document.createTextNode(i * j);
+
+                span.appendChild(text);
+                td.appendChild(span);
+                tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+        }
+
+        }
+        else{
+            console.error("Error in tbody id")
+        }
+        
+
+        // for(var i=1;i<=a;i++)
+        // {
+        //     var tr = document.createElement("tr");
+        //     for(var j=1;j<=b;j++)
+        //     {
+        //         var td = document.createElement("td");
+        //         var span = document.createElement("span");
+        //         var text = document.createTextNode(i*j);
+        //         span.appendChild(text);
+        //         td.appendChild(span);
+        //         tr.appendChild(td);
+        //     }
+        //     tbody.appendChild(tr);
+        // }
+        // document.write(a);
+        // document.write(b);
+    </script>
+</body>
+</html>
